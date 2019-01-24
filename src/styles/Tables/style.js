@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(${props => props.howRow}, 1fr);
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid rgba(224, 224, 224, 1);
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.75rem;
   font-weight: 500;

@@ -11,13 +11,15 @@ const MainNames = ({ names }) => (
 
 const ContentText = ({ content }) => (
   <Fragment>
-    <span>{content}</span>
+      {Object.keys(content).map( (key)=> (
+         <span key={key}>{content[key]}</span>
+      ))}
   </Fragment>
 );
 MainNames.propTypes = {
   names: PropTypes.string.isRequired
 };
 ContentText.propTypes = {
-  content: PropTypes.string.isRequired
+  content: PropTypes.object.isRequired
 };
 export { MainNames, ContentText };
